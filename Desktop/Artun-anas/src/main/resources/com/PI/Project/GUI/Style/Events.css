@@ -1,0 +1,43 @@
+.navbar {
+    -fx-background-color: linear-gradient(to bottom right, #000000, #595959);
+    -fx-background-image: url("https://edencoding.com/wp-content/uploads/2021/03/layer_06_1920x1080.png");
+}
+.navbutton {
+
+    -fx-cursor:hand;
+}
+
+.navbutton:hover {
+    -fx-background-color:#ffffff;
+
+}
+
+
+
+.table-view {
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: White;
+    -fx-size: 20px;
+    -fx-border-radius: 20px;
+}
+table-view .column-header .label{
+
+    -fx-text-fill:black;
+    -fx-font-family: "Arial";
+}
+
+.search-container {
+    -fx-border-color: #6F6F6F;
+    -fx-border-radius: 30;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+

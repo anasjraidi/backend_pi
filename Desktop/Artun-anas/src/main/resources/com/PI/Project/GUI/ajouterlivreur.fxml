@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PI.Project.tests.ajouterlivreurController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" layoutX="99.0" layoutY="23.0" prefHeight="54.0" prefWidth="250.0" text="Ajouter livreur">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Noml" layoutX="77.0" layoutY="95.0" prefHeight="42.0" prefWidth="289.0" promptText="Nom" />
+        <Line endX="92.79998779296875" endY="0.399993896484375" layoutX="274.0" layoutY="137.0" startX="-196.0" startY="0.399993896484375" />
+        <TextField fx:id="Prenoml" layoutX="77.0" layoutY="155.0" prefHeight="42.0" prefWidth="291.0" promptText="Prenom" />
+        <TextField fx:id="Maill" layoutX="75.0" layoutY="217.0" prefHeight="42.0" prefWidth="291.0" promptText="Mail" />
+        <Line endX="126.5999755859375" endY="0.399993896484375" layoutX="241.0" layoutY="197.0" startX="-163.0" startY="0.399993896484375" />
+        <Line endX="144.5999755859375" endY="0.4000244140625" layoutX="222.0" layoutY="259.0" startX="-145.0" startY="0.4000244140625" />
+        <Line endX="106.4000244140625" endY="0.399993896484375" layoutX="260.0" layoutY="320.0" startX="-184.00001525878906" startY="0.399993896484375" />
+        <Button layoutX="54.0" layoutY="465.0" mnemonicParsing="false" onAction="#AjouterLivreur" prefHeight="42.0" prefWidth="142.0" stylesheets="@Style/Button.css" text="Enregister" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="106.0" fitWidth="128.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@416453895_3598720420401613_3688246558276852478_n.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="18.0" fitWidth="15.0" layoutX="417.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@fermer-la-croix.png" />
+            </image>
+        </ImageView>
+      <Button layoutX="249.0" layoutY="465.0" mnemonicParsing="false" onAction="#annuler" prefHeight="42.0" prefWidth="142.0" stylesheets="@Style/Button.css" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="150.0" layoutY="330.0" prefHeight="106.0" prefWidth="142.0">
+         <children>
+            <ImageView fx:id="imagee" fitHeight="78.0" fitWidth="155.0" layoutX="42.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="importbtn" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#InsererImage" prefHeight="42.0" prefWidth="155.0" stylesheets="@Style/Button.css" text="Importer" />
+         </children>
+      </AnchorPane>
+      <PasswordField fx:id="Mdpl" layoutX="75.0" layoutY="278.0" prefHeight="42.0" prefWidth="291.0" promptText="Mot de passe" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="FieldHolder" prefHeight="758.0" prefWidth="1065.0" style="-fx-background-color: #f2f1eb; -fx-border-radius: 50;" stylesheets="@Style/Events.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="132.0" prefWidth="1065.0" style="-fx-background-color: white;" stylesheets="@Style/Events.css">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="66.0" visible="false" />
+            <Label text="Evenements">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="197.0" prefWidth="1065.0" style="-fx-background-color: white;" stylesheets="@Style/Events.css">
+         <children>
+            <Button layoutX="846.0" layoutY="31.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #404040;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <HBox alignment="CENTER_LEFT" layoutX="51.0" layoutY="34.0" prefHeight="41.0" prefWidth="305.0" styleClass="search-container" >
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="22.0" visible="false" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="15.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../images/search-interface-symbol.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="25.0" prefWidth="208.0" promptText="Search" styleClass="transparent" stylesheets="@../../../../../../../../../Events.css" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <TableView prefHeight="628.0" prefWidth="1065.0" stylesheets="@Style/Events.css">
+         <columns>
+            <TableColumn prefWidth="140.0" text="Nom" />
+            <TableColumn minWidth="3.0" prefWidth="200.0" text="Description" />
+            <TableColumn prefWidth="181.0" text="Date" />
+            <TableColumn prefWidth="178.0" text="Frais" />
+            <TableColumn prefWidth="172.0" text="Image" />
+            <TableColumn prefWidth="194.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="FieldHolder" prefHeight="758.0" prefWidth="1065.0" style="-fx-background-color: #efeff5; -fx-border-radius: 50;" stylesheets="@Style/Events.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PI.Project.tests.afficherlivreurController">
+   <children>
+      <Label prefHeight="44.0" prefWidth="237.0" text="Livraison">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+      <VBox prefHeight="655.0" prefWidth="991.0" style="-fx-background-color: white;" styleClass="Vbox-container" stylesheets="@Style/Events.css">
+         <children>
+            <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="895.0" style="-fx-background-color: #f2f2f2;" stylesheets="@Style/Events.css">
+               <children>
+                  <Button layoutX="779.0" layoutY="7.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: white;" stylesheets="@Style/Button.css" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/refresh-buttons.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="877.0" layoutY="7.0" mnemonicParsing="false" onAction="#naviguezVersAjouter" prefHeight="30.0" prefWidth="85.0" stylesheets="@Style/Button.css" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="8.0" prefHeight="30.0" prefWidth="212.0" style="-fx-background-color: white;" styleClass="search-container">
+                     <children>
+                        <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="22.0" visible="false" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/search.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="search" prefHeight="26.0" prefWidth="166.0" promptText="Search" style="-fx-background-color: white;">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <TableView fx:id="table" prefHeight="542.0" prefWidth="975.0" stylesheets="@Style/Events.css">
+               <columns>
+                  <TableColumn fx:id="colln" prefWidth="104.0" text="Nom" />
+                  <TableColumn fx:id="collp" minWidth="3.0" prefWidth="147.0" text="Prenom" />
+                  <TableColumn fx:id="collm" minWidth="3.0" prefWidth="203.0" text="Adress mail" />
+                  <TableColumn fx:id="colli" prefWidth="133.5999755859375" text="Image" />
+                  <TableColumn fx:id="Act" prefWidth="195.199951171875" text="Action" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

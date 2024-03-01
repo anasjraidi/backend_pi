@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="724.0" prefWidth="973.0" styleClass="primary-color"  xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox spacing="20.0">
+         <children>
+            <Label text="Dashboard">
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="120.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" >
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="240.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="120.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image><Image url="@image/group%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="-18.0" layoutY="-22.0" text="Clients">
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="65.0" prefWidth="171.0" text="120k">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox layoutX="25.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" styleClass="card2" >
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="240.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="-18.0" layoutY="-22.0" text="livreurs" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="146.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/fast-delivery.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="65.0" prefWidth="171.0" text="150">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="265.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" styleClass="card" >
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="240.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="-18.0" layoutY="-22.0" text="Commandes">
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="176.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/commandes.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="65.0" prefWidth="171.0" text="120k">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="505.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" style="-fx-background-color: #A7D1B1;" styleClass="card" >
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="240.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="-18.0" layoutY="-22.0" text="Produits">
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="171.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/orders.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="65.0" prefWidth="171.0" text="120k">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="290.0" prefWidth="100.0">
+         <children>
+            <Label prefHeight="88.0" prefWidth="232.0" text="most month sales">
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="400.0" prefWidth="400.0" spacing="20.0" styleClass="card">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <VBox prefHeight="110.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Pane prefHeight="162.0" prefWidth="243.0">
+                           <children>
+                              <ImageView fitHeight="184.0" fitWidth="226.0" layoutX="14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/x1.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="162.0" prefWidth="243.0">
+                     <children>
+                        <ImageView fitHeight="184.0" fitWidth="226.0" layoutX="14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/x2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="250.0" layoutY="30.0" prefHeight="162.0" prefWidth="243.0">
+                     <children>
+                        <ImageView fitHeight="184.0" fitWidth="226.0" layoutX="14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/x3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="513.0" layoutY="30.0" prefHeight="162.0" prefWidth="243.0">
+                     <children>
+                        <ImageView fitHeight="184.0" fitWidth="226.0" layoutX="14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/x4.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
